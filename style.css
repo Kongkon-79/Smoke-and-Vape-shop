@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.not_found {
+    background-image: url("/images/404.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.not_found_content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.not_found_title{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.not_found_btn{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #E40041 ;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 4px;
+}
+.or{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.report {
+    color : #E40041;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ----------------------------- */
+
+/* pagination style  */
+.swiper-pagination-bullet {
+    background-color: white !important;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    margin: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: rgb(
+      250,
+      184,
+      3
+    ) !important;
+  }
+
+
+  .swiper-button-next {
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 12px; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease; 
+  }
+
+  
+  .swiper-button-prev {
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 12px; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background: rgba(0, 0, 0, 0.7); 
+  }
+
+ 
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 24px;
+  }
+
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+
+
+
