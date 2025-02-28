@@ -9,9 +9,239 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="top-header">
+        <div class="container">
+          <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+              <a href="index.html">
+                <img src="/images/logo.webp" alt="Cigar Shop Logo" />
+              </a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container desktop-search">
+              <form action="#" method="get">
+                <div class="search-box">
+                  <input type="text" placeholder="What are you looking for?" />
+                  <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- User Actions -->
+            <div class="user-actions">
+              <div class="account">
+                <a href="#"><i class="fas fa-user"></i> Sign in or Register</a>
+              </div>
+              <div class="currency-selector">
+                <div class="dropdown">
+                  <button class="dropdown-btn" id="currency-dropdown-btn">
+                    BDT <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="dropdown-content" id="currency-dropdown">
+                    <a href="#">BDT</a>
+                    <a href="#">USD</a>
+                    <a href="#">EUR</a>
+                    <a href="#">GBP</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cart">
+                <a href="#" class="cart-icon">
+                  <i class="fas fa-shopping-bag"></i>
+                  <span class="cart-count">1</span>
+                </a>
+              </div>
+              <div class="mobile-menu-toggle">
+                <button id="menu-toggle">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Search -->
+          <div class="mobile-search">
+            <form action="#" method="get">
+              <div class="search-box">
+                <input type="text" placeholder="What are you looking for?" />
+                <button type="submit" class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <div class="container">
+          <ul class="nav-menu">
+            <li class="nav-item has-dropdown">
+              <a href="#">ACCESSORIES <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-content">
+                <a href="#">Lighters</a>
+                <a href="#">Cutters</a>
+                <a href="#">Humidors</a>
+                <a href="#">Cases</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">NICOTINE POUCHES</a>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="#">TOBACCO SHOP <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-content">
+                <a href="#">Pipe Tobacco</a>
+                <a href="#">Cigarette Tobacco</a>
+                <a href="#">Chewing Tobacco</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">CIGAR CLUB</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">FILTERED CIGARS</a>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="#"
+                >HANDMADE CIGARS <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Dominican</a>
+                <a href="#">Nicaraguan</a>
+                <a href="#">Cuban</a>
+                <a href="#">Honduran</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">HOOKAH</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">LITTLE CIGARS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">MACHINE MADE CIGARS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">ROLLING PAPERS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Menu -->
+      <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+          <h2>Menu</h2>
+          <button id="close-menu">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">ACCESSORIES</a>
+              <button class="mobile-dropdown-toggle">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="mobile-dropdown-content">
+              <a href="#">Lighters</a>
+              <a href="#">Cutters</a>
+              <a href="#">Humidors</a>
+              <a href="#">Cases</a>
+            </div>
+          </li>
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">NICOTINE POUCHES</a>
+            </div>
+          </li>
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">TOBACCO SHOP</a>
+              <button class="mobile-dropdown-toggle">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="mobile-dropdown-content">
+              <a href="#">Pipe Tobacco</a>
+              <a href="#">Cigarette Tobacco</a>
+              <a href="#">Chewing Tobacco</a>
+            </div>
+          </li>
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">CIGAR CLUB</a>
+            </div>
+          </li>
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">FILTERED CIGARS</a>
+            </div>
+          </li>
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">HANDMADE CIGARS</a>
+              <button class="mobile-dropdown-toggle">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="mobile-dropdown-content">
+              <a href="#">Dominican</a>
+              <a href="#">Nicaraguan</a>
+              <a href="#">Cuban</a>
+              <a href="#">Honduran</a>
+            </div>
+          </li>
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">HOOKAH</a>
+            </div>
+          </li>
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">LITTLE CIGARS</a>
+            </div>
+          </li>
+          <li class="mobile-menu-item">
+            <div class="mobile-menu-header">
+              <a href="#">MACHINE MADE CIGARS</a>
+            </div>
+          </li>
+        </ul>
+        <div class="mobile-account">
+          <h3>Account</h3>
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+        <div class="mobile-currency">
+          <h3>Currency</h3>
+          <ul>
+            <li><a href="#">BDT</a></li>
+            <li><a href="#">USD</a></li>
+            <li><a href="#">EUR</a></li>
+            <li><a href="#">GBP</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
     <!-- Bannner container -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -57,11 +287,8 @@
         </div>
       </div>
 
-      <!-- Navigation Buttons -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-
-      <!-- Pagination -->
       <div class="swiper-pagination"></div>
     </div>
 
