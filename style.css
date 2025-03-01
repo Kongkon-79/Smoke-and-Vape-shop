@@ -38,9 +38,63 @@ body {
   background-size: cover;
   height: 500px;
   width: 100%;
-
 }
 
+/* .not_found_search{
+  padding-top:12px ;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 400px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+} */
+.not_found_search {
+  padding: 12px 10px;
+  width: 400px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .not_found_search {
+    width: 100%; /* Full width */
+    max-width: 350px; /* Limit max size */
+    padding: 10px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .not_found_search {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+.not-found-details{
+  height: 300px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+@media (max-width: 1440px) {
+  .not_found_content {
+    width: 1000px;
+    height: 450px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+}
 @media (max-width: 768px) {
   .not_found_content {
     width: 600px;
@@ -52,37 +106,10 @@ body {
   .not_found_content {
     width: 350px;
     height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
-
-/* .not_found_title {
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-}
-.not_found_btn {
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  background-color: #e40041;
-  padding: 16px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.or {
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
-}
-.report {
-  color: #e40041;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-} */
 
 /* ----------------------------- */
 
@@ -743,11 +770,16 @@ ul {
   color: #333;
   margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+  .featured-products h2 {
+    padding-top: 30px;
+  }
+}
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 30px;
   padding: 20px;
 }
 
@@ -764,8 +796,8 @@ ul {
 }
 
 .product-card img {
-  width: 100%;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 5px;
 }
 
